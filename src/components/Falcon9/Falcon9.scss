@@ -1,0 +1,70 @@
+@import './../../style/constants';
+
+@mixin titleContent {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em;
+}
+@mixin subtitleContent {
+  font-size: 1em;
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+}
+@mixin paragraphContentDescription {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-style: normal;
+  padding-right: 1em;
+  color: $paragraphVisibility2;
+}
+
+.Falcon9 {
+  width: 70%;
+  margin: 0 auto;
+  .Falcon9__FlexContainer {
+    display: flex;
+    flex-direction: row;
+
+    .Falcon9__FlexContainer__Colum1 {
+      flex: 1;
+      .self-align-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .padding-1em {
+        padding: 1em;
+      }
+      .Falcon9__Plane--plane1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+      }
+      h3 {
+        @include titleContent;
+      }
+      h4 {
+        @include subtitleContent;
+      }
+      .Falcon9__P--Description {
+        @include paragraphContentDescription;
+        color: $paragraphVisibility1;
+      }
+      p {
+        @include paragraphContentDescription;
+      }
+      a {
+        @include linkWithArrow;
+        margin-bottom: 4rem;
+        display: inline-block;
+      }
+      .Falcon9__FlexContainer__Colum--Img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

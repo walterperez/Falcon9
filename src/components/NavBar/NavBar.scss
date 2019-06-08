@@ -1,0 +1,57 @@
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0b0b0b;
+  color: aliceblue;
+  padding: 1em 0;
+  z-index: 100;
+  font-size: 0.8em;
+
+  .NavBar__Container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .NavBar__Container__Logo {
+      flex: 0.25;
+    }
+
+    .NavBar__Container__Menu {
+      flex: 1;
+      list-style: none;
+      display: inline-block;
+      .NavBar__Container__Menu__item {
+        display: inline-block;
+        padding: 0 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .NavBar__Container__Menu__Right {
+      list-style: none;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.527);
+
+      .NavBar__Container__Menu__Right__item {
+        display: inline-block;
+        padding: 1em;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 0.02em;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

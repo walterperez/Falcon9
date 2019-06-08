@@ -1,0 +1,20 @@
+$paragraphVisibility1: rgba(255, 255, 255, 0.85);
+$paragraphVisibility2: rgba(255, 255, 255, 0.4);
+
+@mixin linkWithArrow {
+  color: #3569a4;
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: '→';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    color: white;
+    margin-left: 1em;
+    text-transform: uppercase;
+  }
+  &:hover {
+    text-decoration-line: underline;
+  }
+}

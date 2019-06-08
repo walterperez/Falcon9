@@ -1,0 +1,67 @@
+.Hero {
+  padding: 4em 0 0 0;
+  position: relative;
+  background-color: #181c1f;
+  .Hero__Img {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: opacity(70%);
+  }
+
+  .Hero__Text {
+    position: absolute;
+    top: 7em;
+    left: 50%;
+    margin-left: -25%;
+    max-width: 50%;
+
+    .Hero__Title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 2.8em;
+      color: white;
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+
+    .Hero__PlayIcon {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      border: solid 2px #fff;
+      border-radius: 100px;
+
+      &:before {
+        content: '';
+        width: 34px;
+        height: 53px;
+        border-left: 2px solid #fff;
+        border-radius: 5px;
+        position: absolute;
+        top: 23px;
+        left: 37px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 27px;
+        left: 19px;
+        width: 42px;
+        height: 42px;
+        transform: rotate(45deg) skew(-5deg, -5deg);
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
+    }
+  }
+}
