@@ -1,0 +1,46 @@
+.Footer {
+  width: 100%;
+  background-color: #0b0b0b;
+  color: aliceblue;
+  padding: 1em 0;
+  z-index: 1;
+  font-size: 0.7em;
+
+  .Footer__Container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .Footer__Container__Logo {
+      flex: 0.25;
+    }
+
+    .Footer__Container__Menu {
+      flex: 1;
+      list-style: none;
+      display: inline-block;
+
+      .Footer__Container__Menu__item {
+        display: inline-block;
+        padding: 0 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .Footer__Container__Menu__Right {
+      list-style: none;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.527);
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
