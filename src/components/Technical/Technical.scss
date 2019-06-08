@@ -1,0 +1,46 @@
+@import './../../style/constants';
+
+.Technical {
+  padding: 3em 0;
+
+  .Technical__Box {
+    width: 70%;
+    padding: 2em;
+    margin: 0 auto;
+    background-color: #0b0b0b;
+    .Technical__Box__Title {
+      margin-bottom: 1em;
+      font-stretch: ultra-condensed;
+      color: $paragraphVisibility1;
+    }
+    .Technical__Box__Flex {
+      display: flex;
+
+      .Technical__Box__Flex--Col1 {
+        flex: 1;
+        margin-right: 1em;
+        color: $paragraphVisibility2;
+        h4 {
+          width: 100%;
+          border-bottom: 1px solid $paragraphVisibility2;
+          font-size: 0.7em;
+          line-height: 1.3em;
+          margin-bottom: 0.5em;
+          font-stretch: ultra-expanded;
+        }
+        p {
+          color: white;
+          font-size: 1.2em;
+          font-weight: bold;
+          margin-bottom: 1em;
+          font-stretch: ultra-expanded;
+
+          span {
+            color: $paragraphVisibility2;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
