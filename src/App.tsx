@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero';
 import Description from './components/Description/Description';
 import Falcon9 from './components/Falcon9/Falcon9';
 import Technical from './components/Technical/Technical';
+import Articles from './components/Articles/Articles';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Description />
       <Falcon9 />
       <Technical />
+      <Articles />
     </div>
   );
 };
